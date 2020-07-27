@@ -10,7 +10,7 @@ let selectedRegion
 let randomVar
 let app = express()
 let apiKey = process.env.API_KEY
-let port = 3000
+let port = process.env.PORT || 3000 
 app.use(express.static('public'))
 app.use(express.json())
 app.listen(port, () => console.log(`listening at port ${port}`))
