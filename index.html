@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type= "text/css" href = "styles.css"/>    <title> #Save Solo Q</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"> <img src="leagueLogo.png" class = "logo"/></a>
+        </div>
+        <ul class="nav-links">
+          
+            
+            <li>    
+                <h1><a href="index.html" homeButton id='homeLink'>Home</a></h1>
+            </li>
+            <li><h1><a href="challengerPlayers.html" challengerButton> Challenger players</a></h1></li>
+        </ul>
+    </nav>
+        
+    <div class='Stats' stat-page>
+        <div class='winRate-wins-losses'>  
+          <h1>
+            Win Rate
+            
+          </h1>
+          <h2 winRate>percentage</h2>
+          <br>
+          <br>
+          <br>    
+          <h1>
+              Wins
+          </h1>
+          <h2 wins>Win ammount</h2>
+          <br>
+          <br>
+          <br>
+          <h1>
+              losses
+          </h1>
+          <h2 losses>loss ammount</h2>
+          <br>
+          <br>
+          <br>
+          <h1>Tier</h1>
+          <h2 tier> Tier of Player</h2>
+          <br>
+          <br>
+          <br>
+          <h1>Rank</h1>
+          <h2 rank>Rank of player</h2>
+          <br>
+          <br>
+          <br>
+          <h1>Level</h1>
+          <h2 level>Level of the player</h2>
+          <br>
+          <br>
+          <br>
+          <h1>LP</h1>
+          <h2 Lp>LP of the player</h2>
+
+        </div>
+
+
+        <div class='Tier-Rank'>  
+        </div>
+        <div class='LP'>  
+        </div>
+        <div class='Level'>
+        </div>
+        <div class='Ranked-Solo'>
+        </div>
+        <div class='inactive-hotStreak'>
+        </div>
+    </div>
+
+    <div class= "last-100-Games-div" past-100>
+        <table dataFromLast100Games id ='previousGamesTable'>  
+            <thead class='last-100-games-header'>
+                <tr>
+                <th>Game</th>
+                <th>Chamption</th> 
+                <th>Lane</th>
+            </tr>   
+            </thead>
+
+        <tbody class= 'lastHundredBody'> 
+        
+        </tbody>
+        
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class='search-bar' searchRelated>
+        <button class='region-selector-btn' onclick="openDropDown()" id='SelectedRegion' >NA</button>
+        <ul class ="region-list" region-list>      
+            <li regionElement>
+            EUN
+           </li>
+           <li regionElement>
+            EUW
+           </li>
+           <li regionElement>
+            LAN
+           </li>      
+           <li regionElement>
+            LAS
+           </li>
+           <li regionElement> 
+            BR
+           </li>
+           <li regionElement>
+            OCE
+           </li>
+           <li regionElement>
+            RU
+           </li>
+           <li regionElement>
+            TR
+           </li>
+           <li regionElement>
+            JP
+           </li>
+           <li regionElement>
+            KR
+           </li>
+       </ul>
+    </button>
+        <input type="text" name="box" placeholder="Summoner Name..." id = 'userInput'>
+            <i class="fa fa-search" method='put' onclick="checkInput()" value=''></i>
+            
+        
+    </input>
+        
+    </div>
+
+
+
+
+     
+  
+    
+
+   <script src = "homepage.js" defer></script>
+</body>
+</html>

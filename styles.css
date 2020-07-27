@@ -1,0 +1,291 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: 'Play', sans-serif;
+}
+.nav-links li{
+    list-style: none;
+    font-size: 35px;
+}
+
+#homeLink{
+    position: relative;    
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+body{
+    background-color: #042049;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.last-100-games-header{
+    display: table-header-group;
+    vertical-align: middle;
+    border-spacing: 125px;
+    display: inline;
+    color: purple ;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Play', sans-serif;
+}
+
+
+.last-100-Games-div{
+    margin-left: 57%;
+    margin-top: 6%;
+    min-height: 500px;
+    width: 1000px;
+    background-color: black;
+    border-radius: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    border: 10px solid purple; 
+    display: none;
+}
+
+
+.drop-button{
+    min-height: 8vh;
+    font-size: 35px;
+    color: black;
+    background-color: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+}
+
+.dropdown-menu{
+    color: black;
+    position: absolute;
+    left: 80%;
+
+}
+
+.region-list li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 23px;
+    outline: none;
+    border: none;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.region-list li:hover{
+background-color: purple;
+cursor: pointer;
+}
+
+.region-selector-btn{
+    position: relative;
+    top: 9px;
+    background-color: none;
+    background: none;
+    font-size: 45px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    letter-spacing: 2px;
+}
+.region-selector-btn:hover{
+    background-color: purple;
+}
+
+
+.region-list{
+    font-family: 'Play', sans-serif;
+    position: absolute;
+    display: none;
+}
+
+.search-bar{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: (-50%, -50%);
+}
+
+input{
+    border: 3px solid red;
+    height: 60px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+
+.search-bar i{
+    color: white;
+    cursor: pointer;   
+     font-size: 25px;
+}
+.earth-img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 40px;
+    right: -30px ;
+
+}
+
+.dropdown-list{
+    list-style: none;
+    color: black;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+
+}
+
+.region-menu{
+    margin-left: 38%;
+    margin-top: 10%;
+    height: 700px;
+    width:800px;
+    background-color: rgba(255, 255, 255, 0.75);
+    align-items: center;
+    display: none;
+}
+
+.menu-title{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.region-table{
+    border-spacing: 100px;
+    display: inline;
+    
+}
+
+
+td button{
+    background: none;
+    background-color: none;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    font-family: 'Play', sans-serif;
+    cursor: pointer;
+}
+
+
+.all-data{
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 500px;
+    width: 1500px;
+    background-color: black;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+.content-header{
+    display: table-header-group;
+    vertical-align: middle;
+    border-spacing: 150px;
+    display: inline;
+    color: white ;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+
+.main-content{
+    border-spacing: 145px;
+    display: inline;
+    color: orange;
+    font-size: 23px;
+    font-family: 'Play', sans-serif;
+}
+
+
+.lastHundredBody{
+    border-spacing: 160px;
+    display: inline;
+    color: white;
+    font-size: 35px;
+    font-family: 'Play', sans-serif;
+}
+
+.Stats{
+    width: 600px;
+    height: 1650px;
+    position: relative;
+    float: left;
+    top: 145px;
+    background-color: black;
+    display: none;
+    border-radius: 40px;
+    border: 10px solid purple; 
+}
+
+.winRate-wins-losses{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-radius: 40px;
+    color: purple;
+    text-align: left;
+    font-size: 30px;
+    left: 20px;
+    top: 80px;
+    font-family: 'Play', sans-serif;   
+}
+
+.winRate-wins-losses h2 {
+    color: white;
+}
+
+.Tier-Rank{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-radius: 40px;
+    color: purple;
+    text-align: left;
+    font-size: 30px;
+    left: 20px;
+    top: 400px;
+    font-family: 'Play', sans-serif;   
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type= "text/css" href = "styles.css"/>    <title> #Save Solo Q</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"> <img src="leagueLogo.png" class = "logo"/></a>
+        </div>
+        <ul class="nav-links">
+            <li><h1><a href="challengerPlayers.html" > Challenger players</a></h1></li>
+        </ul>
+
+        <div class="dropdown-menu">
+            <button class="drop-button" onclick="openRegion()">
+                Region
+                <img src="earth.png"  class="earth-img" /></button>
+
+    </nav>
+        <div class="region-menu" region-menu>  
+            <h1 class="menu-title">Server</h1>
+           <table class="region-table">
+            <tr>
+             <td><button region-name>Brazil</button></td>
+             <td><button region-name>Europe NE</button></td>
+             <td><button region-name>Europe W</button></td>
+            </tr>
+            <tr>
+                <td><button region-name>Latin America N</button></td>
+                <td><button region-name>Latin America S</button></td>
+                <td><button region-name>North America</button></td>
+            </tr>
+               <tr>
+                <td><button region-name >Oceania</button></td>
+                <td><button region-name>Russia</button></td>
+                <td><button region-name>Turkey</button></td>
+               </tr>
+               <tr>
+                <td><button region-name>Japan</button></td>
+                <td><button region-name>Korea</button></td>
+               </tr>
+        </table>
+        </div>
+        </div>
+
+
+        <div class= "all-data" content-container>
+            <table class = 'content-table' content-table id ='myTable'>  
+                <thead class='content-header'>
+                 <tr>
+                    <th>Rank</th>
+                    <th>LP</th>
+                    <th>losses</th>
+                    <th>wins</th>
+                    <th>Summoner Name</th> 
+                    <th>Tier</th>
+                </tr>   
+                </thead>
+
+            <tbody class='main-content' theBodyTable> 
+            
+            </tbody>
+            
+            </table>
+
+        </div>
+
+        <script src = "index.js" defer></script>
+    </body>
+</html>
