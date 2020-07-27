@@ -76,7 +76,7 @@ let options = {
     body :  JSON.stringify(regionData)
 }   
  
-   let response = await fetch('https://4fb20d6d3e41.ngrok.io', options)
+   let response = await fetch('https://league-of-legends-site.herokuapp.com/', options)
    let data = await response.json()
    let riotData = (JSON.parse(data.riotData))
    handleData(riotData)
