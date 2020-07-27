@@ -97,7 +97,7 @@ async function sendToServer(userInput){
     body :  JSON.stringify(inputData)
 }   
  
- let response = await fetch('https://4fb20d6d3e41.ngrok.io/userInput', options)
+ let response = await fetch('https://league-of-legends-site.herokuapp.com/userInput', options)
  let data = await response.json()
  let retrievedSumName = JSON.parse(data.JSONSumName)
  let retrievedSumLevel = JSON.parse(data.JSONSumLevel)
