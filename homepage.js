@@ -96,7 +96,7 @@ async function sendToServer(userInput){
     },
     body :  JSON.stringify(inputData)
 }   
- 
+ try{
  let response = await fetch('https://league-of-legends-site.herokuapp.com/userInput', options)
  let data = await response.json()
  let retrievedSumName = JSON.parse(data.JSONSumName)
@@ -114,14 +114,16 @@ async function sendToServer(userInput){
     else{
     
 if(retrievedSumLevel < 30){
-    alert('under Level 30, no ranked games played');
+    alert('No ranked games have been played on this account');
 } 
 else{   
     restyleSite(retrievedSumName, last100GamesParsed, leagueV4Parsed, retrievedSumLevel)
 }
 }
 }
-
+catch(e) {  
+}
+}
 
 
 function restyleSite(retrievedSumName, last100GamesParsed, leagueV4Parsed, retrievedSumLevel){
