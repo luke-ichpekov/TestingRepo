@@ -123,6 +123,7 @@ else{
 }
 catch(e) {  
     alert('that account does not exist')
+    console.log('error')
 }
 }
 
